@@ -1,4 +1,8 @@
 Al momento de poder ver este archivo favor de confirmar tu contribución con un mensaje: 
 
 Angel: Checked \(*.*)/
+<<<<<<< HEAD
 Daniela: nun
+=======
+Saul: lml
+>>>>>>> origin/master
