@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css\bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css\style.css">
+  <link rel="stylesheet" type="text/css" href="css\datepicker.css">
+  <script type="text/javascript" src="js\jquery-1.12.2.min.js"></script>
+  <script type="text/javascript" src="js\validator.js"></script>
+  <script type="text/javascript" src="js\bootstrap-datepicker.js"></script>
+  <script src="js/bootstrapValidator.min.js"></script>
+
+  
+
+</head>
+<body>
+    <div class="container">
+        <div class="well">
+
+          <form id="registrationForm" method="post" class="form-horizontal mitad" action="#">
+                
+            <h4>Registro de usuarios</h4>
+                
+                
+
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-3 control-label">Correo Electrónico*:</label>
+                    <div class="col-lg-3">
+                        <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Correo Electrónico">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword" class="col-lg-3 control-label">Password*:</label>
+                    <div class="col-lg-3">
+                        <input type="password" class="form-control" name="inputPassword" id="inputPassword" placeholder="Password">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confPassword" class="col-lg-3 control-label">Confirmar Password*:</label>
+                    <div class="col-lg-3">
+                        <input type="password" class="form-control" name="confPassword" id="confPassword" placeholder="Confirmar Password">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="nombre" class="col-lg-3 control-label">Nombre(s)*:</label>
+                  <div class="col-lg-3">
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre(s)"/>
+                    <span class="help-block"></span>  
+                  </div>
+                </div>
+           
+                 <div class="form-group">
+                  <label for="apellido" class="col-lg-3 control-label">Apellido(s):</label>
+                  <div class="col-lg-3">
+                    <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido(s)"/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="telefono" class="col-lg-3 control-label">Teléfono:</label>
+                  <div class="col-lg-3">
+                    <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono"/>
+                  </div>
+                </div>
+
+           
+                <div class="form-group">
+                  <label for="fecha_nac" class="col-lg-3 control-label">Fecha de Nacimiento*:</label>
+                    <div class="col-lg-3">
+                      <input type="text" class="datepicker form-control" name="fecha_nac" id="fecha_nac" placeholder="Fecha de Nacimiento"/>
+                      <span class="help-block"></span>
+                     </div>
+                </div>
+
+                <div class="form-group">
+                        <label class="col-lg-3 control-label">Dirección:</label>
+                        <div class="col-lg-3">
+                            <textarea rows="3" class="form-control" placeholder="Dirección"></textarea>
+                        </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-lg-3">Genero:</label>
+                    <div class="col-lg-3">
+                        <label class="radio-inline">
+                            <input type="radio" id="male" name="male" value="male"> Maculino
+                        </label>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="radio-inline">
+                            <input type="radio" id="female" name="female" value="female"> Femenino
+                        </label>
+                    </div>
+                </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-offset-3 col-xs-9">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="news"> Enviar noticias.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-offset-3 col-xs-9">
+                                <label class="checkbox-inline">
+                                    <input id="agree" name="agree" type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-xs-offset-3 col-xs-9">
+                                <input id="btn_enviar" type="submit" class="btn btn-primary" value="Enviar">
+                                <input type="reset" class="btn btn-default" value="Limpiar">
+                            </div>
+                  </div>
+
+
+         
+          </form>
+        </div>
+    </div>
+
+  
+</body>
+</html> 
+
+
+   <!--  <div id="login-overlay" class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Login</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-xs-6">
+                      <div class="well">
+                          
+
+                              <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3">Email:</label>
+                                    <div class="col-xs-9">
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3">Password:</label>
+                                    <div class="col-xs-9">
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3">Confirmar Password:</label>
+                                    <div class="col-xs-9">
+                                        <input type="password" class="form-control" placeholder="Confirmar Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3">Nombre:</label>
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control" placeholder="Nombre">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3">Apellido:</label>
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control" placeholder="Apellido">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3" >Telefono:</label>
+                                    <div class="col-xs-9">
+                                        <input type="tel" class="form-control" placeholder="Telefono">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3">F. Nacimiento:</label>
+                                    <div class="col-xs-3">
+                                        <select class="form-control">
+                                            <option>Dia</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <select class="form-control">
+                                            <option>Mes</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <select class="form-control">
+                                            <option>Año</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3">Dirección:</label>
+                                    <div class="col-xs-9">
+                                        <textarea rows="3" class="form-control" placeholder="Dirección"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-xs-3">Genero:</label>
+                                    <div class="col-xs-2">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="genderRadios" value="male"> Maculino
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="genderRadios" value="female"> Femenino
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-offset-3 col-xs-9">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="news"> Enviar noticias.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-offset-3 col-xs-9">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
+                                        </label>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <div class="col-xs-offset-3 col-xs-9">
+                                        <input type="submit" class="btn btn-primary" value="Enviar">
+                                        <input type="reset" class="btn btn-default" value="Limpiar">
+                                    </div>
+                                </div>
+                            </form>
+
+
+
+                      </div>
+                  </div>
+            
+              </div> -->
+    
+
